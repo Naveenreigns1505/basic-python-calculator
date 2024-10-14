@@ -1,31 +1,24 @@
 
----
 
-#### **2. calculator.py** (Starter Code with Incomplete Functions)
-
-This file contains the **function stubs** that students must complete.
-
-**Content of `calculator.py`**:
-```python
 # calculator.py
 
 def add(a, b):
     """Returns the sum of two numbers."""
-    pass  # TODO: Implement this function
+    return a + b  # Correctly implemented logic
 
 def subtract(a, b):
     """Returns the difference of two numbers."""
-    pass  # TODO: Implement this function
+    return a - b  # Correctly implemented logic
 
 def multiply(a, b):
     """Returns the product of two numbers."""
-    pass  # TODO: Implement this function
+    return a * b  # Correctly implemented logic
 
 def divide(a, b):
     """Returns the division of two numbers."""
     if b == 0:
-        return "Error! Division by zero."
-    pass  # TODO: Implement this function
+        return "Error! Division by zero."  # Handle division by zero
+    return a / b  # Correctly implemented logic
 
 def main():
     print("Basic Python Calculator")
