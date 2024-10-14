@@ -1,5 +1,53 @@
-Complete the following functions:
-add(a, b): Returns the sum of two numbers.
-subtract(a, b): Returns the difference between two numbers.
-multiply(a, b): Returns the product of two numbers.
-divide(a, b): Returns the result of dividing a by b. Handle division by zero.
+
+---
+
+#### **2. calculator.py** (Starter Code with Incomplete Functions)
+
+This file contains the **function stubs** that students must complete.
+
+**Content of `calculator.py`**:
+```python
+# calculator.py
+
+def add(a, b):
+    """Returns the sum of two numbers."""
+    pass  # TODO: Implement this function
+
+def subtract(a, b):
+    """Returns the difference of two numbers."""
+    pass  # TODO: Implement this function
+
+def multiply(a, b):
+    """Returns the product of two numbers."""
+    pass  # TODO: Implement this function
+
+def divide(a, b):
+    """Returns the division of two numbers."""
+    if b == 0:
+        return "Error! Division by zero."
+    pass  # TODO: Implement this function
+
+def main():
+    print("Basic Python Calculator")
+    operation = input("Enter operation (add, subtract, multiply, divide): ").strip().lower()
+
+    if operation not in ['add', 'subtract', 'multiply', 'divide']:
+        print("Invalid operation!")
+        return
+
+    a = float(input("Enter first number: "))
+    b = float(input("Enter second number: "))
+
+    if operation == 'add':
+        result = add(a, b)
+    elif operation == 'subtract':
+        result = subtract(a, b)
+    elif operation == 'multiply':
+        result = multiply(a, b)
+    elif operation == 'divide':
+        result = divide(a, b)
+
+    print(f"Result: {result}")
+
+if __name__ == "__main__":
+    main()
