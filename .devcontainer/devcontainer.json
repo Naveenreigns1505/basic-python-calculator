@@ -1,9 +1,10 @@
 {
-  "name": "Python Calculator Dev Environment",
-  "image": "python:3.9",
+  "name": "Python Dev Environment",
+  "image": "mcr.microsoft.com/devcontainers/python:3.9",  // Python image for Codespaces
+  "postCreateCommand": "code README.md calculator.py --reuse-window",  // Open both files side-by-side
   "customizations": {
     "vscode": {
-      "extensions": ["ms-python.python"]
+      "extensions": ["ms-python.python"]  // Install Python extension
     }
   }
 }
