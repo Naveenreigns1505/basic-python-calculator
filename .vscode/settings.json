@@ -1,0 +1,19 @@
+{
+  "workbench.startupEditor": "none",   // No welcome screen
+  "workbench.editor.openSideBySideDirection": "right",  // Open new editors to the right
+  "files.autoSave": "afterDelay",   // Optional: Auto-save files
+  "workbench.editor.enablePreview": false, // Always open files fully
+  "workbench.layout": {
+    "editor": {
+      "orientation": 0,  // 0 = horizontal split, 1 = vertical split
+      "groups": [
+        {
+          "editors": ["README.md"]
+        },
+        {
+          "editors": ["calculator.py"]
+        }
+      ]
+    }
+  }
+}
